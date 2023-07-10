@@ -1,0 +1,12 @@
+<% layout('/layouts/boilerplate')%>
+<div class="border border-dark p-2 rounded-4  mb-2">
+<h1>Home Page</h1>
+
+<% for(let inventory of inventories) {%>
+    <div >
+        <div><%= inventory.name%></div>
+        <div><img src="<%= inventory.image%>" alt="" style="width: 150px; height: 150px;"></div>
+    </div>
+<% }%>
+
+</div>
